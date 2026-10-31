@@ -1,0 +1,11 @@
+{
+  "name": "buying-research",
+  "owner": { "name": "buying-research contributors" },
+  "plugins": [
+    {
+      "name": "buying-research",
+      "source": "./",
+      "description": "Say what you want to buy. Answer a few questions. Get deep research and one honest pick."
+    }
+  ]
+}
