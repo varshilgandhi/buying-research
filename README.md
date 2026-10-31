@@ -5,6 +5,7 @@ A Claude skill for anything you want to buy. Say what you want, answer 3-5 usefu
 It checks official sites, real prices, loan terms, independent tests and owner reviews. For bigger purchases, it also reads YouTube transcripts, local shops, Instagram and Facebook. You get:
 
 - **One pick and one fallback**, with a High, Medium or Low confidence label
+- **When to buy:** now, or wait for a named sale, using the model's past sale prices where it can find them
 - **The pick's weaknesses**, and what would change the answer
 - **What it could not read**, named plainly
 - **A saved report** with its research notes
@@ -13,7 +14,9 @@ See a [worked example](skills/buying-research/references/worked-example/report.m
 
 ## Install
 
-In Claude Code:
+New to Claude Code? Follow the [official quickstart](https://code.claude.com/docs/en/quickstart) first. It needs a computer and a paid Claude plan or a Console account. A skill can't install Claude Code for you.
+
+Then, in your terminal:
 
 ```
 claude plugin marketplace add varshilgandhi/buying-research
@@ -38,7 +41,9 @@ It tells you the tier before starting, and you can change it. A Deep run can use
 
 - **Required:** Claude Code. Python 3 is used for loan arithmetic.
 - **Recommended:** Claude in Chrome, for live stock, city-set prices, map reviews and personal loan screens. Without it, the skill uses web search and fetch and says what is lost. Many retailers block fetching, so expect more Low-confidence picks and little local evidence.
-- **Optional:** `yt-dlp`, for YouTube captions without Chrome. The skill never installs anything.
+- **Optional:** `yt-dlp` for YouTube captions without Chrome, and `pdftotext` for PDF manuals.
+
+The skill checks for these helper tools. If one is missing, it asks once and installs it with your system's package manager when you say yes. You type any admin password yourself, and you install Claude in Chrome yourself.
 
 The skill files may also load on claude.ai, but that is untested.
 

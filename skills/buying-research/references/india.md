@@ -15,7 +15,9 @@ Show money as Rs 1,49,042 and use lakh for large amounts. Hindi or Hinglish mess
 - **Vehicles:** on-road price is what counts. Get the full breakup: ex-showroom, subsidy, road tax and RTO, insurance, and other charges. Check that it adds up. Prices vary by state and city, so set the site to the buyer's city.
 - **Appliances and electronics:** compare the price with delivery, installation and any compulsory kit (such as AC stand and extra copper pipe). Compare with exchange and without it.
 - Check whether GST and any scheme or subsidy are already included, or may have ended.
-- Festive periods are common, but count an offer only if a dated one was found.
+- **Sales to check:** Flipkart Big Billion Days, Amazon Great Indian Festival and Prime Day, Republic Day and Independence Day sales, Diwali and other festival offers, Croma and Reliance Digital sales, and regional festivals such as Onam or Pongal where the buyer lives. Dates change every year, so search for them. Use PriceHistory or PriceBefore for past sale prices, noting that tracker prices may not name the exact model suffix. Much of a headline sale price is often a bank-card offer, so show the price with and without the card.
+- **Vehicles:** dealers often discount old stock near year-end, but check the manufacture month, since an older vehicle may resell for less. Festive offers need a dated scheme from the maker or dealer.
+- **ACs:** prices and installation slots can tighten in summer, so an off-season buyer may have more choice. Treat this as a pattern, and check current prices.
 
 ## Finance
 

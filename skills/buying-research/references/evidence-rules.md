@@ -51,5 +51,5 @@ Search and fetch summaries can state opinions as fact, and they can be stale. Ne
 
 - **Say what could not be read,** by name and with the reason. Never imply coverage of a blocked platform.
 - **State the pick's weaknesses** as plainly as its strengths. No product is perfect.
-- **Do not rush them.** A festival or sale matters only if a dated offer was found.
+- **Do not rush them, and do not hide a sale.** Always run the sale check. A sale changes the advice only if its date is announced or its pattern is well established, and past prices show a real saving. Keep announced and expected sales apart.
 - **Correct yourself openly.** If a later finding overturns something the user was told, say so and keep it in the corrections list.

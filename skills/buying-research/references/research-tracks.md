@@ -29,6 +29,28 @@ Stock and price on some sites appear only after a location or pincode is set, so
 
 Offers count only if a dated offer was found. Otherwise say none was found, and do not tell the buyer to rush. Ignore countdown timers with no date or terms, and do not count card-only offers for a buyer paying another way. Report a dated price rise the same way. If the buyer has no working product today, stock now can outweigh a small saving.
 
+### Sale check
+
+Run this at every tier, as part of deciding when to buy. Search today, because sale dates move every year, and never state a date from memory.
+
+1. **Find the next sale** at sellers that stock the pick and fallback. Look for marketplace sales, festival sales, the maker's own sale, and seasonal clearance. Use the seller's own page first, then reliable press.
+2. **Label how firm it is:**
+   - **Live now:** running today. Give the start date and the end date. If no end date is published, say so, and do not imply one.
+   - **Announced:** the seller or reliable press gives dates. Give the dates.
+   - **Expected:** past years suggest it, but no dates exist yet. Label it `[Ours]`, give last year's dates, and do not present it as confirmed.
+   - **None found,** or **just ended.** Say so.
+3. **Estimate the real saving.** Find this exact model's price in the last comparable sale from a price tracker or dated listing, and compare it with today's price. Do not use the seller's struck-out price or "% off", since prices can rise before a sale. If no history exists for the model, say the saving is unknown and do not invent one.
+4. **Count only what this buyer can get.** Separate the plain sale price from seller coupons and from bank-card, exchange and membership offers. Count a coupon only if you saw it apply to this listing. Otherwise, tell the buyer to check it at checkout. Ask which cards they hold only if it could change the answer.
+5. **Weigh the cost of waiting:** going without the product, the season, the risk of this model selling out, a dated price rise, and whether it can be delivered and installed during the sale.
+
+Then decide, and state:
+- **Buy now** if no sale falls within the time they can wait, the likely saving is small, or waiting costs more than it saves.
+- **Buy during the live sale** if one is running and the price beats its recent history, and say that it may end without notice when no end date is published.
+- **Wait** only for an announced sale, or a well-established expected one, that falls within the time they can wait and where past prices show a real saving. Give the date to check again, and a fallback if the sale disappoints.
+- **A price to beat** in both cases: "Buy at Rs X or below, whenever you see it." Base it on the past sale price.
+
+Saying nothing about sales is not acceptable. If the check was thin, say so and lower how firmly you state the timing, not the pick.
+
 ## Finance
 
 Run only if they may borrow.
@@ -56,7 +78,7 @@ For cheap goods and fast-changing electronics, long-term accounts are often miss
 
 **Reddit:** often refused by browser and search tools. Try once, then list it as not read.
 
-**YouTube:** check for speech first, since many short reviews are music only. In Chrome, open the video's description and click "Show transcript" with a real mouse click, as scripted clicks may leave the panel hidden. Then read the panel's text in slices, as tools may cut long output. If that fails or Chrome is unavailable, if `yt-dlp` is already installed, try `yt-dlp --skip-download --write-auto-subs --sub-langs "en.*,hi.*" --ignore-no-formats-error <url>`, adding the buyer's language. It may fail with HTTP 429. If so, stop trying and record the videos as not read. Never install anything. Mark auto-captions, since numbers can be garbled.
+**YouTube:** check for speech first, since many short reviews are music only. In Chrome, open the video's description and click "Show transcript" with a real mouse click, as scripted clicks may leave the panel hidden. Then read the panel's text in slices, as tools may cut long output. If that fails or Chrome is unavailable, if `yt-dlp` is already installed, try `yt-dlp --skip-download --write-auto-subs --sub-langs "en.*,hi.*" --ignore-no-formats-error <url>`, adding the buyer's language. It may fail with HTTP 429. If so, stop trying and record the videos as not read. Do not install anything at this point, as setup was already offered in the plan. Mark auto-captions, since numbers can be garbled.
 
 ## Instagram and Facebook
 

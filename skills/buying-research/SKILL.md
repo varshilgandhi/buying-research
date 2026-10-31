@@ -1,6 +1,6 @@
 ---
 name: buying-research
-description: Deep research for anything someone wants to buy, ending in one honest pick. Asks 3-5 useful questions, then checks official sites, real prices, finance, independent tests and owner reviews, and for bigger purchases YouTube transcripts, Instagram, Facebook and local shops. Gives one pick, a fallback, its weaknesses and what would change the answer. Use whenever someone is deciding what to buy or choosing between products, for a scooter, car, AC, laptop, phone, fridge, ghar ghanti or anything else, even if they never say "research". Triggers include "which X should I buy", "X or Y", "is X worth it", "best X under Y", "konsa lena chahiye", "kaunsa lu", "help me choose", or "should I take the EMI on this". Skip for a quick spec lookup, tracking an order, or selling something.
+description: Deep research for anything someone wants to buy, ending in one honest pick. Asks 3-5 useful questions, then checks official sites, real prices, finance, independent tests and owner reviews, and for bigger purchases YouTube transcripts, Instagram, Facebook and local shops. Gives one pick, a fallback, its weaknesses and what would change the answer. Use whenever someone is deciding what to buy or choosing between products, for a scooter, car, AC, laptop, phone, fridge, ghar ghanti or anything else, even if they never say "research". Triggers include "which X should I buy", "X or Y", "is X worth it", "best X under Y", "konsa lena chahiye", "kaunsa lu", "help me choose", "should I wait for the sale", "sale mein lena chahiye", or "should I take the EMI on this". Skip for a quick spec lookup, tracking an order, or selling something.
 ---
 
 # Buying research
@@ -11,7 +11,7 @@ Someone wants to spend their money well. Give them one pick they can act on and 
 
 Ask what they want to buy if they have not said. Then ask 3-5 questions, and only ones that could change the answer. Skip anything they already told you. If they need it urgently ("mine just died"), ask fewer, and treat stock today as a deciding factor.
 
-Always needed: **country and city**, and **budget**. Choose the rest from:
+Always needed: **country and city**, **budget**, and **how soon they need it**, because that decides whether waiting for a sale is an option. Choose the rest from:
 - who uses it and how much (hours, days or km a year, if that drives the arithmetic), and how long they will keep it
 - how they handle this today, and what that costs
 - physical limits and conditions: space, room, installation, water, climate, power
@@ -38,6 +38,7 @@ Tell the user, in a few short lines:
 - **Tracks** you will run and those you will skip.
 - **Browser:** whether Claude in Chrome is available. Without it, use web search and fetch, and say what is lost: live stock, city-set prices, retailer pages that block fetching, personal offers, most of Instagram and Facebook, Maps review text.
 - **Logins:** only if Chrome is available and a planned track needs one, ask once per site as set out in `references/safety.md`. Do not open a logged-in page before they answer.
+- **Setup:** check for the helper tools this plan will use, and offer to install what is missing, as set out in `references/safety.md`. Say nothing if nothing is missing. If they say no, or an install fails, carry on and say what is lost.
 
 Create `./buying-research/<item>-<YYYY-MM-DD>/` with a `notes/` folder. If it already exists, read the notes and continue instead of starting over.
 
@@ -72,6 +73,8 @@ Research repeats its own errors, so make this a separate pass over the draft, af
 
 Always name **one pick and one fallback**, with a confidence label. "Wait" or "keep what you have" can be the pick when the evidence supports it, but never to avoid making a call.
 
+Also say **when to buy**: buy now, or wait until a named sale, with the price that makes buying worthwhile either way. Use the sale check in the price track.
+
 - **High:** primary sources confirm it, owner or test evidence agrees, and the gap to the fallback is clear.
 - **Medium:** the case holds, but the win is narrow or relies on owner stories.
 - **Low:** a key fact is unverified, or evidence is thin or conflicting. Name the one check that would settle it, or at most two if they are separate.
@@ -80,7 +83,7 @@ Confidence describes the evidence, not the stakes, so also say what being wrong 
 
 Write `report.md` from `references/report-template.md`. For the expected standard, see `references/worked-example/report.md`, which is an example of method and not buying advice. If the report file cannot be written, give the report in full in chat and say so.
 
-In chat, give only: the pick, fallback, confidence, what being wrong costs, its main weaknesses, what would flip it, what could not be read, and the report's path. Where it fits, offer a short message they can paste into a family group. Never send anything for them.
+In chat, give only: the pick, fallback, confidence, when to buy, what being wrong costs, its main weaknesses, what would flip it, what could not be read, and the report's path. Where it fits, offer a short message they can paste into a family group. Never send anything for them.
 
 ## Limits
 

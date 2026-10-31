@@ -7,6 +7,7 @@ Save as `report.md`. Write in the buyer's language, in plain words. Quick report
 
 **Pick: <exact model and variant, price, date, place>. Confidence: <High, Medium or Low>.**
 **Fallback: <exact model and price>.**
+**When to buy: <buy now, or wait until a named sale and date>. Worth buying at <price> or below.**
 <A short paragraph: why it wins, on what, by how much; its main weaknesses; what being wrong would cost; what must happen before paying.>
 <If confidence is Low, the one check that would settle it, and which way each answer points.>
 
@@ -39,6 +40,9 @@ Every other contender, each with a reason it is out.
 
 ## Corrections
 What was earlier said that turned out wrong, and what is true now.
+
+## When to buy
+The next sale, whether it is announced or only expected, this model's price in the last sale, the realistic saving with and without a bank card, and what waiting would cost. Keep it to a few lines unless the timing decides the purchase.
 
 ## Before paying
 A short plan, and for bigger purchases, exact questions to ask the seller in writing. Say whether any dated offer was found.
